@@ -1,11 +1,17 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { APITester } from "./APITester";
 import "@/public/styles/globals.css";
 
 import logo from "@/public/images/logo.svg";
 import reactLogo from "@/public/images/react.svg";
+import { Counter } from "./components/shared";
+import { useState } from "react";
 
 export function App() {
+  const [count, setCount] = useState(0);
+
+  const increment: () => void = () => setCount(prevCount => prevCount + 1);
+  const decrement: () => void = () => setCount(prevCount => prevCount - 1);
+  const reset: () => void = () => setCount(0);
+
   return (
     <div className="container mx-auto p-8 text-center relative z-10">
       <div className="flex justify-center items-center gap-8 mb-8">
@@ -21,17 +27,12 @@ export function App() {
         />
       </div>
 
-      <Card className="bg-card/50 backdrop-blur-sm border-muted">
-        <CardContent className="pt-6">
-          <h1 className="text-5xl font-bold my-4 leading-tight">Bun + React</h1>
-          <p>
-            Edit{" "}
-            <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">src/App.tsx</code> and
-            save to test HMR
-          </p>
-          <APITester />
-        </CardContent>
-      </Card>
+      <Counter
+        count={count}
+        onIncrement={increment}
+        onDecrement={decrement}
+        reset={reset}
+      />
     </div>
   );
 }
