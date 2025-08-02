@@ -8,8 +8,8 @@ import { useState } from "react";
 export function App() {
   const [count, setCount] = useState(0);
 
-  const increment: () => void = () => setCount(count + 1);
-  const decrement: () => void = () => setCount(count - 1);
+  const increment: () => void = () => setCount(prevCount => prevCount + 1);
+  const decrement: () => void = () => setCount(prevCount => prevCount - 1);
   const reset: () => void = () => setCount(0);
 
   return (
