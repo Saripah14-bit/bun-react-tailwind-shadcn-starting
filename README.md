@@ -1,72 +1,78 @@
-# Bun - React - Tailwind - Shadcn | Starting Template
+# 🚀 Bun + React + Tailwind + Shadcn UI Starter Template
 
-To install dependencies:
+## Fitur
 
-```bash
-bun install
-```
-
-To start a development server:
-
-```bash
-bun dev
-```
-
-To build the project:
-
-```bash
-bun run build
-```
-
-To run for production:
-
-```bash
-bun start
-```
-
-This project was created using `bun init` in bun v1.2.19. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+- **Bun**: Runtime JavaScript super cepat, pengelola paket, dan bundler.
+- **React**: Library UI deklaratif dan efisien.
+- **Tailwind CSS**: Utility-first CSS framework untuk styling yang mudah dan konsisten.
+- **Shadcn UI**: Koleksi komponen UI yang dapat dikustomisasi.
+- **TypeScript**: Dukungan penuh untuk pengetikan statis.
+- **Struktur Proyek Modular**: Mudah dikembangkan dan dipelihara.
 
 ---
 
-## Project Structure
+##  Instalasi
 
-```ts
-└── 📁src   // Main source directory
-    └── 📁components    // Reusable UI components
-        └── 📁shared    // Shared components
-        └── 📁ui    // Shadcn UI components 
-            ├── button.tsx  
-            ├── card.tsx
-            ├── form.tsx
-            ├── input.tsx
-            ├── label.tsx
-            ├── select.tsx
-    └── 📁hooks   // Custom hooks
-    └── 📁lib   // Library functions
-        ├── utils.ts    // Utility functions
-    └── 📁pages   // Page components
-    └── 📁public    // Public assets
-        └── 📁images    // Image assets
-            ├── logo.svg
-            ├── react.svg
-        └── 📁styles    // CSS Styles directory
-            ├── globals.css
-        ├── index.html    // Main HTML file
-    └── 📁routes    // Application routes
-    └── 📁stores    // Global state management (Zustand)
-    └── 📁types   // TypeScript type definitions
-    ├── APITester.tsx   // API testing component
-    ├── App.tsx   // Main application component
-    ├── index.ts    // Entry point for the application
-    ├── main.tsx    // Main entry file for the React application
-├── .env    // Environment variables
-├── .gitignore    // Git ignore file
-├── build.ts    // Build script
-├── bun-env.d.ts    // Type definitions for Bun environment
-├── bun.lock    // Bun lock file
-├── bunfig.toml   // Bun configuration file
-├── components.json   // Shadcn Components configuration
-├── package.json    // Project configuration
-├── README.md   // Project documentation
-└── tsconfig.json   // TypeScript configuration
+1. **Clone repository:**
+   ```bash
+   git clone <repo-url>
+   cd <nama-folder>
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   bun install
+   ```
+
+---
+
+## Perintah Pengembangan
+
+- **Menjalankan server development:**
+  ```bash
+  bun dev
+  ```
+
+- **Build project:**
+  ```bash
+  bun run build
+  ```
+
+- **Menjalankan untuk production:**
+  ```bash
+  bun start
+  ```
+
+---
+
+## 📁 Struktur Proyek
+
+```text
+src/
+├── components/
+│   ├── shared/         # Komponen yang dapat digunakan ulang
+│   └── ui/             # Komponen Shadcn UI (button, card, dsb)
+├── hooks/              # Custom React hooks
+├── lib/                # Fungsi utilitas/library
+├── pages/              # Komponen halaman
+├── public/
+│   ├── images/         # Aset gambar
+│   └── styles/         # File CSS global
+├── routes/             # Routing aplikasi
+├── stores/             # State management (Zustand)
+├── types/              # Definisi tipe TypeScript
+├── APITester.tsx       # Komponen untuk testing API
+├── App.tsx             # Komponen utama aplikasi
+├── index.ts            # Entry point aplikasi
+├── main.tsx            # Entry point React
 ```
+
+File penting lainnya:
+- `.env` - Environment variables
+- `bunfig.toml` - Konfigurasi Bun
+- `tsconfig.json` - Konfigurasi TypeScript
+- `components.json` - Konfigurasi Shadcn Components
+
+## Screen Shoot 
+
+![gambar] (./public [alt](image-1.png).png)
