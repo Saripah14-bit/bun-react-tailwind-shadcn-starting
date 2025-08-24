@@ -1,4 +1,4 @@
-# 🚀 Bun + React + Tailwind + Shadcn UI Starter Template
+
 
 ## Fitur
 
